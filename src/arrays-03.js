@@ -18,12 +18,12 @@
  */
 function addUpArrayElements(arr) {
   let sum = 0;
-  console.log(arr);
-  for (let i = 0; i < arr.length; i += 1) {
-    sum += arr[i];
-  }
+  arr.forEach(number => {
+    sum += number;
+  });
   return sum;
 }
+
 
 /**
  * Squares each number if the array
